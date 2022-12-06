@@ -20,8 +20,8 @@ if (isset($_GET['text']) AND isset($_GET['id']) AND isset($_GET['token'])) {
 
    $response = curl_exec( $ch );
    curl_close( $ch );
-   echo "Sukses mengirim pesan ke discord";
+   echo "Message successfully sent to Discord";
 } else {
-   echo "VARIABLE BELUM DISET";
+   echo "VARIABLES NOT SET";
 }
 ?>

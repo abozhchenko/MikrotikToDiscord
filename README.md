@@ -14,6 +14,9 @@ Monitor your mikrotik devices easily! used for sending your mikrotik logs from n
 | Webhook Discord | [Read this](https://support.discord.com/hc/en-us/articles/228383668-Intro-to-Webhooks) guide to make your own discord webhook |
 | Mikrotik | You can use any type of Mikrotik |
 
+PHP 7.2
+php-curl
+
 # How to use
 1. You can use my url that already deployed in Heroku or you can deploy your own by pressing Deploy to heroku button.
 2. Copy this script to your mikrotik, for example in netwatch Up/Down :
@@ -26,7 +29,14 @@ Notes
  - The `INPUT_ID_WEBHOOK` change to your id discord webhook url, `https://discord.com/api/webhooks/7939909737777777/REl22gJR5WIp0I7BwCiMu2UPHG3_jXMNPddddddddddddddddna9EmmW39buWI3` then the `7939909737777777` is your ID
  - The `INPUT_ID_WEBHOOK` change to your discord webhook token, `REl22gJR5WIp0I7BwCiMu2UPHG3_jXMNPddddddddddddddddna9EmmW39buWI3` it's your token
 
-![image](https://user-images.githubusercontent.com/10250068/112728650-4067a280-8f63-11eb-8945-da7d2cec3184.png)
+Example
+```
+/tool fetch url="https://trokewebhook.herokuapp.com/discord.php?text=INPUT_YOUR_TEXT_HERE&id=7939909737777777&token=REl22gJR5WIp0I7BwCiMu2UPHG3_jXMNPddddddddddddddddna9EmmW39buWI3" keep-result=no;
+```
+Send test message via browser
+```
+https://trokewebhook.herokuapp.com/discord.php?text=INPUT_YOUR_TEXT_HERE&id=7939909737777777&token=REl22gJR5WIp0I7BwCiMu2UPHG3_jXMNPddddddddddddddddna9EmmW39buWI3
+```
 
 3. After that you can apply and ok. The results will be like this :
 

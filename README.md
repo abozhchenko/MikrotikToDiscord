@@ -19,7 +19,7 @@ Monitor your mikrotik devices easily! used for sending your mikrotik logs from n
 2. Copy this script to your mikrotik, for example in netwatch Up/Down :
 
 ```bash
-/tool fetch url="https://trokewebhook.herokuapp.com/form.php?text=INPUT_YOUR_TEXT_HERE&id=INPUT_ID_WEBHOOK&token=INPUT_TOKEN_WEBHOOK" keep-result=no;
+/tool fetch url="https://trokewebhook.herokuapp.com/discord.php?text=INPUT_YOUR_TEXT_HERE&id=INPUT_ID_WEBHOOK&token=INPUT_TOKEN_WEBHOOK" keep-result=no;
 ```
 Notes
  - The `INPUT_YOUR_TEXT` you need to change to whatever you want, example `THE+RB+FRONT+IS+UP` (You need add `+` for spacing)

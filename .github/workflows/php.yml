@@ -3,6 +3,8 @@ name: PHP
 on:
   push:
     branches: [ "master" ]
+  
+  workflow_dispatch:
 
 jobs:
   build:
@@ -13,9 +15,14 @@ jobs:
     - uses: actions/checkout@v3
 
     - name: Install PHP
-      run: |
-        sudo apt update
-        sudo apt install php php-curl
+      uses: shivammathur/setup-php@v2
+      with:
+        php-version: '8.2'
+        extensions: curl
+      
+#      run: |
+#        sudo apt update
+#        sudo apt install php php-curl
 
     - name: Check PHP
       run: php -v

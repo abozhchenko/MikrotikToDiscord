@@ -14,8 +14,8 @@ jobs:
 
     - name: Install PHP
       run: |
-        apt update
-        apt install php php-curl
+        sudo apt update
+        sudo apt install php php-curl
 
     - name: Check PHP
       run: php -v

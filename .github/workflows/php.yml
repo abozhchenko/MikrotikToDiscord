@@ -29,6 +29,15 @@ jobs:
       with:
         php-version: '8.2'
         extensions: curl
+    - name: Setup Pages
+      uses: actions/configure-pages@v2
+    - name: Build with Jekyll
+      uses: actions/jekyll-build-pages@v1
+      with:
+        source: ./
+        destination: ./_site
+    - name: Upload artifact
+      uses: actions/upload-pages-artifact@v1      
       
 #      run: |
 #        sudo apt update

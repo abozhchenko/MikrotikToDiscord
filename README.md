@@ -13,9 +13,7 @@ Monitor your mikrotik devices easily! used for sending your mikrotik logs from n
 | Discord | Download the [Discord](https://discord.com) through to the website |
 | Webhook Discord | [Read this](https://support.discord.com/hc/en-us/articles/228383668-Intro-to-Webhooks) guide to make your own discord webhook |
 | Mikrotik | You can use any type of Mikrotik |
-
-PHP 7.2
-php-curl
+| PHP 7.2 + | php-curl |
 
 # How to use
 1. You can use my url that already deployed in Heroku or you can deploy your own by pressing Deploy to heroku button.
